@@ -1,6 +1,6 @@
 LandisData  Scenario
 
-Duration  50
+Duration  25
 
 Species   species.txt
 
@@ -22,7 +22,7 @@ CellLength  100 << meters, 100 x 100 m = 1 ha
 >> Disturbance Extensions   Initialization File
 >> ----------------------   -------------------
    "Dynamic Biomass Fuels"	dynamic-biomass-fuels.txt
-   "Dynamic Fire System"	dynamic-fire.txt
+>>   "Dynamic Fire System"	dynamic-fire.txt
 
 >>   DisturbancesRandomOrder  yes  << optional parameter; default = no
 
