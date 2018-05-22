@@ -42,15 +42,11 @@ CellLength  	100 << meters, 100 x 100 m = 1 ha
 
 >> 	Disturbance Extension	Initialization File
 >>	--------------------	-------------------
-   	"Dynamic Biomass Fuels"	dynamic-fire_SetUpFuel_s2e3.txt
+   	"Dynamic Biomass Fuels"	dynamic-fuel_SetUpFuel_s2e3.txt
    	"Dynamic Fire System"	dynamic-fire_SetUpFire_s2e3.txt
->>	"Base Wind"		base-wind_SetUp_s2e3.txt
->>	"Base Harvest"		base-harvest_SetUp_s2e3.txt
->>	"Base BDA"		base-BDA_SetUp_s2e3.txt
 
 
 >>   DisturbancesRandomOrder  yes  	<< optional
-                         		<< Commented (default) is "no"
 
 
 >> ----------------------
@@ -59,11 +55,7 @@ CellLength  	100 << meters, 100 x 100 m = 1 ha
 
 >> 	Output Extension		Initialization File
 >> 	----------------		-------------------
-	"Output Max Species Age"	output_MaxSppAge.txt
  	"Output Biomass"		output_Biomass.txt		
-  	"Output Biomass Reclass"    	output_BiomassReclass.txt
-
-
 
 >> RandomNumberSeed  147  << optional parameter; uncomment for reproducibilty tests
                           << Commented (default) is a RandomNumberSeed generated using the current time
