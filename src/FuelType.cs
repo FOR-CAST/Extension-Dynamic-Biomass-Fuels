@@ -1,7 +1,6 @@
-//  Copyright 2006-2010 Portland State University, USFS Northern Research Station, University of Wisconsin-Madison
 //  Authors:  Robert Scheller, Brian Miranda, Jimm Domingo
 
-using Edu.Wisc.Forest.Flel.Util;
+using Landis.Utilities;
 using System.Collections.Generic;
 
 namespace Landis.Extension.BiomassFuels
