@@ -1,5 +1,6 @@
 LandisData  "Scenario"
 
+
 >> ---------------------------------------------
 >> DEFINING A SCENARIO FOR A SINGLE LANDIS-II RUN
 >>----------------------------------------------
@@ -9,19 +10,20 @@ LandisData  "Scenario"
 >>	3. Select ONE OR MORE Disturbance Extensions (but only ONE harvest extension)
 >>	4. Select ONE OR MORE (compatible) Output Extensions
 
->>	A selection is made active by uncommenting a line (ie, remove the >> symbols)
+>>	A selection is made active by uncommenting a line (ie, remove the >> symbols) 
 
 
->>----------------------
+
+>>-------------------
 >> REQUIRED INPUTS
->>--------------------
+>>-------------------
 
-Duration  		50
+Duration  	50
 
-Species   	./species_s2e3.txt
+Species   	./species_s2e1.txt
 
-Ecoregions      ./ecoregions_s2e3.txt
-EcoregionsMap   ./ecoregions_s2e3.gis
+Ecoregions      ./ecoregions_s2e1.txt
+EcoregionsMap   ./ecoregions_s2e1.gis
 
 CellLength  	100 << meters, 100 x 100 m = 1 ha
 
@@ -31,9 +33,9 @@ CellLength  	100 << meters, 100 x 100 m = 1 ha
 >> SUCCESSION EXTENSIONS
 >> -----------------------
 
->> Succession Extension     Initialization File
->> --------------------     -------------------
-   "Biomass Succession"    biomass-succession_SetUp_s2e3.txt
+>> 	Succession Extension     Initialization File
+>> 	--------------------     -------------------
+	"Biomass Succession"	biomass-succession_SetUp_s2e1.txt
 
 
 >> --------------------------
@@ -47,16 +49,19 @@ CellLength  	100 << meters, 100 x 100 m = 1 ha
 
 
 >>   DisturbancesRandomOrder  yes  	<< optional
+                         		<< Commented (default) is "no"
 
-
->> ----------------------
->> OUTPUT EXTENSIONS
+>> ------------------------
+>> OUTPUT EXTENSONS
 >> ----------------------
 
 >> 	Output Extension		Initialization File
 >> 	----------------		-------------------
- 	"Output Biomass"		output_Biomass.txt		
+>>  	"Output Biomass"		output_Biomass.txt		
+
+
 
 >> RandomNumberSeed  147  << optional parameter; uncomment for reproducibilty tests
                           << Commented (default) is a RandomNumberSeed generated using the current time
+
 
