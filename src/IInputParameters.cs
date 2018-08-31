@@ -1,4 +1,3 @@
-//  Copyright 2006-2010 Portland State University, USFS Northern Research Station, University of Wisconsin-Madison
 //  Authors:  Robert Scheller, Brian Miranda, Jimm Domingo
 
 using System.Collections.Generic;
