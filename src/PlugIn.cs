@@ -456,11 +456,22 @@ namespace Landis.Extension.BiomassFuels
             int numSiteCohorts = 0;
             int percentDeadFir = 0;
 
-            ISpeciesDataset SpeciesDataset = modelCore.Species;
+            //ISpeciesDataset SpeciesDataset = modelCore.Species;
 
-            foreach (ISpeciesCohorts speciesCohorts in (Landis.Library.BiomassCohorts.ISpeciesCohorts) SiteVars.Cohorts[site])
+            foreach (ISpecies species in modelCore.Species)
+            {
+
+                ISpeciesCohorts speciesCohorts = (Landis.Library.BiomassCohorts.ISpeciesCohorts)SiteVars.Cohorts[site][species];
+                if (speciesCohorts == null)
+                    continue;
                 foreach (ICohort cohort in speciesCohorts)
                     numSiteCohorts++;
+            }
+
+
+                //foreach (ISpeciesCohorts speciesCohorts in (Landis.Library.BiomassCohorts.ISpeciesCohorts) SiteVars.Cohorts[site])
+                //foreach (ICohort cohort in speciesCohorts)
+                //    numSiteCohorts++;
 
 
             percentDeadFir = (int) ( ((double) numDeadFir / (double) (numSiteCohorts + numDeadFir)) * 100.0 + 0.5);
