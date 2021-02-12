@@ -30,7 +30,7 @@ Example files can be [downloaded from GitHub](https://downgit.github.io/#/home?u
 
 # Citation
 
- Cite the User Guide
+ Syphard, A.D., R.M. Scheller, B.C. Ward, W.D. Spencer, J.R. Strittholt. 2011. Simulating landscape-scale effects of fuel treatments in the Sierra Nevada, California, USA. International Journal of Wildland Fire 20: 364-383.
 
 # Support
 
