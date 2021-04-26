@@ -4,7 +4,7 @@ The Dynamic Fire System extension must be used in conjunction with a fuel extens
 
 # Release Notes
 
-- Latest release: Version 3.0.1 — September 2019
+- Latest release: Version 3.0.1, September 2019
 
 - Full release details found in the User Guide and on GitHub.
 - [View User Guide](https://github.com/LANDIS-II-Foundation/Extension-Dynamic-Biomass-Fuels/blob/master/docs/LANDIS-II%20Dynamic%20Biomass%20Fuel%20System%20v3.0%20User%20Guide.pdf).
