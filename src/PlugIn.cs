@@ -2,8 +2,7 @@
 
 using Landis.Core;
 using Landis.SpatialModeling;
-using Landis.Library.BiomassCohorts;
-using Landis.Library.Biomass;
+using Landis.Library.UniversalCohorts;
 
 using System.Collections.Generic;
 using System;
@@ -167,7 +166,7 @@ namespace Landis.Extension.BiomassFuels
             foreach(ISpecies species in modelCore.Species)
             {
 
-                ISpeciesCohorts speciesCohorts = (Landis.Library.BiomassCohorts.ISpeciesCohorts) SiteVars.Cohorts[site][species];
+                ISpeciesCohorts speciesCohorts = SiteVars.Cohorts[site][species];
 
                 if(speciesCohorts == null)
                     continue;
@@ -182,8 +181,8 @@ namespace Landis.Extension.BiomassFuels
                             int sppValue = 0;
 
                             foreach(ICohort cohort in speciesCohorts)
-                                if(cohort.Age >= ftype.MinAge && cohort.Age <= ftype.MaxAge)
-                                    sppValue += cohort.Biomass;
+                                if(cohort.Data.Age >= ftype.MinAge && cohort.Data.Age <= ftype.MaxAge)
+                                    sppValue += cohort.Data.Biomass;
 
                             //modelCore.UI.WriteLine("sppVaue={0}, spp={1}, cohortB={2}.", sppValue, cohort.Species.Name, cohort.Biomass);
 
@@ -461,7 +460,7 @@ namespace Landis.Extension.BiomassFuels
             foreach (ISpecies species in modelCore.Species)
             {
 
-                ISpeciesCohorts speciesCohorts = (Landis.Library.BiomassCohorts.ISpeciesCohorts)SiteVars.Cohorts[site][species];
+                ISpeciesCohorts speciesCohorts = SiteVars.Cohorts[site][species];
                 if (speciesCohorts == null)
                     continue;
                 foreach (ICohort cohort in speciesCohorts)
@@ -500,6 +499,10 @@ namespace Landis.Extension.BiomassFuels
             return total;
         }*/
 
-
+        // Not Implemented; Use to add unique parameters to cohort.data
+        public override void AddCohortData()
+        {
+            return;
+        }
     }
 }

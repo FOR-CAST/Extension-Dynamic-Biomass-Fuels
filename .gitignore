@@ -154,3 +154,17 @@ $RECYCLE.BIN/
 
 # Mac desktop service store files
 .DS_Store
+/src/.vs/dynamic-biomass-fuels/DesignTimeBuild
+/src/.vs/dynamic-biomass-fuels/FileContentIndex
+/src/.vs/dynamic-biomass-fuels/v17
+src/lib/Landis.Library.Metadata-v2.dll
+src/lib/Landis.Library.UniversalCohorts-v1.dll
+testings/Core8-DynamicFuels3.1/Biomass-succession-log.csv
+/testings/Core8-DynamicFuels3.1/biomass-succession
+testings/Core8-DynamicFuels3.1/Climate-annual-log.csv
+testings/Core8-DynamicFuels3.1/Climate-future-input-log.csv
+testings/Core8-DynamicFuels3.1/Climate-spinup-input-log.csv
+/testings/Core8-DynamicFuels3.1/fire
+testings/Core8-DynamicFuels3.1/Landis-log.txt
+testings/Core8-DynamicFuels3.1/Landis-climate-log.txt
+/testings/Core8-DynamicFuels3.1/Metadata

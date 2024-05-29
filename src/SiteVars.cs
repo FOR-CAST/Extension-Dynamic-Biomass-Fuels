@@ -1,8 +1,8 @@
 //  Authors:  Robert Scheller, Brian Miranda, Jimm Domingo
 
-using Landis.Library.BiomassCohorts;
+using Landis.Library.UniversalCohorts;
 using Landis.SpatialModeling;
-using Landis.Library.Biomass;
+
 using System.Collections.Generic;
 
 namespace Landis.Extension.BiomassFuels
@@ -34,7 +34,7 @@ namespace Landis.Extension.BiomassFuels
 
         public static void Initialize()
         {
-            cohorts = PlugIn.ModelCore.GetSiteVar<ISiteCohorts>("Succession.BiomassCohorts");
+            cohorts = PlugIn.ModelCore.GetSiteVar<ISiteCohorts>("Succession.UniversalCohorts");
             if (cohorts == null)
             {
                 string mesg = string.Format("Cohorts are empty.  Please double-check that this extension is compatible with your chosen succession extension.");
