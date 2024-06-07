@@ -172,3 +172,6 @@ src/.vs/dynamic-fuels/v16/Server/sqlite3/storage.ide
 src/.vs/dynamic-fuels/v16/Server/sqlite3/db.lock
 src/.vs/dynamic-fuels/DesignTimeBuild/.dtbcache
 src/dynamic-fuels.sln
+src/.vs/dynamic-fuels/v16/Server/sqlite3/storage.ide-shm
+src/.vs/dynamic-fuels/v16/Server/sqlite3/storage.ide-wal
+deploy/installer/LANDIS-II-V8 Dynamic Biomass Fuels 3.1.0-setup.exe

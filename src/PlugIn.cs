@@ -12,7 +12,7 @@ namespace Landis.Extension.DynamicFuels
         : ExtensionMain
     {
         public static readonly ExtensionType extType = new ExtensionType("disturbance:fuels");
-        public static readonly string ExtensionName = "Dynamic Biomass Fuels";
+        public static readonly string ExtensionName = "Dynamic Fuel System";
 
         private string mapNameTemplate;
         private string pctConiferMapNameTemplate;

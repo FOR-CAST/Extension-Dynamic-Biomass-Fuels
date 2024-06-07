@@ -1,9 +1,9 @@
 LandisData   Extension
 
-Name         "Dynamic Biomass Fuels"
+Name         "Dynamic Fuel System"
 Version      "4.0"
 Type         disturbance:fuels
-Assembly     Landis.Extension.BiomassFuels-v4
-Class        Landis.Extension.BiomassFuels.PlugIn
+Assembly     Landis.Extension.DynamicFuels-v4
+Class        Landis.Extension.DynamicFuels.PlugIn
 Description  "Dynamic Fuel assignment extension using Biomass"
 CoreVersion  8.0
