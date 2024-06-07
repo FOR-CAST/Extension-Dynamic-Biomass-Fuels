@@ -1,13 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <RootNamespace>Landis.Extension.BiomassFuels</RootNamespace>
-    <AssemblyName>Landis.Extension.BiomassFuels-v3</AssemblyName>
-    <AssemblyTitle>Landis.Extension.BiomassFuels-v3</AssemblyTitle>
-    <AssemblyCompany>Landis-II-Foundation</AssemblyCompany>
-    <AssemblyProduct>Landis.Extension.BiomassFuels-v3</AssemblyProduct>
-    <AssemblyCopyright>Landis-II-Foundation</AssemblyCopyright>
-    <AssemblyVersion>3.1</AssemblyVersion>
+    <RootNamespace>Landis.Extension.DynamicFuels</RootNamespace>
+    <AssemblyName>Landis.Extension.DynamicFuels-v4</AssemblyName>
+    <AssemblyTitle>Landis.Extension.DynamicFuels-v4</AssemblyTitle>
+		<AssemblyProduct>Landis.Extension.DynamicFuels-v4</AssemblyProduct>
+		<AssemblyCompany>Landis-II-Foundation</AssemblyCompany>
+		<AssemblyCopyright>Landis-II-Foundation</AssemblyCopyright>
+    <AssemblyVersion>4.0</AssemblyVersion>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <RepositoryUrl>https://github.com/LANDIS-II-Foundation/Extension-Dynamic-Biomass-Fuels</RepositoryUrl>
@@ -16,11 +16,11 @@
     <PackageProjectUrl>http://www.landis-ii.org</PackageProjectUrl>
     <NeutralLanguage>English</NeutralLanguage>
     <Authors>Landis-II-Foundation</Authors>
-    <Product>Landis.Extension.BiomassFuels-v3</Product>
+    <Product>Landis.Extension.DynamicFuels-v4</Product>
     <Copyright>Landis-II-Foundation</Copyright>
-    <Version>3.1</Version>
+    <Version>4.0</Version>
     <PackageTags>LANDIS-II;Landis;Extension;fire; fuels</PackageTags>
-    <Description>Dynamic Biomass Fuels Extension</Description>
+    <Description>Dynamic Fuels Extension</Description>
     <PackageReleaseNotes>.NET Standard 2.0 update</PackageReleaseNotes>
     <FileVersion>3.1</FileVersion>
   </PropertyGroup>

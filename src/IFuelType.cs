@@ -1,6 +1,6 @@
 //  Authors:  Robert Scheller, Brian Miranda, Jimm Domingo
 
-namespace Landis.Extension.BiomassFuels
+namespace Landis.Extension.DynamicFuels
 {
     /// <summary>
     /// A forest type.

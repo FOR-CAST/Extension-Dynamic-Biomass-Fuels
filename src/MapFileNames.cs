@@ -5,7 +5,7 @@ using Landis.Core;
 
 using System.Collections.Generic;
 
-namespace Landis.Extension.BiomassFuels
+namespace Landis.Extension.DynamicFuels
 {
     /// <summary>
     /// Methods for working with the template for filenames of Fuel maps.

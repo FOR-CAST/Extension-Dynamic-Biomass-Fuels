@@ -3,7 +3,7 @@
 using Landis.Utilities;
 using System.Collections.Generic;
 
-namespace Landis.Extension.BiomassFuels
+namespace Landis.Extension.DynamicFuels
 {
 
     //NOTE:  M2, M4, and O1b excluded for this list.  This is because these types are

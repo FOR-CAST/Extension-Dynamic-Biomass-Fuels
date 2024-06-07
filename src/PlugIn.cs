@@ -5,9 +5,8 @@ using Landis.SpatialModeling;
 using Landis.Library.UniversalCohorts;
 
 using System.Collections.Generic;
-using System;
 
-namespace Landis.Extension.BiomassFuels
+namespace Landis.Extension.DynamicFuels
 {
     public class PlugIn
         : ExtensionMain

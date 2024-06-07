@@ -8,7 +8,7 @@ using Landis.Core;
 using Landis.Utilities;
 using System.IO;
 
-namespace Landis.Extension.BiomassFuels
+namespace Landis.Extension.DynamicFuels
 
 {
     public static class MetadataHandler

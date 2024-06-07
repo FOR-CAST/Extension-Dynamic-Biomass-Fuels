@@ -3,7 +3,7 @@
 using Landis.Utilities;
 using System.Collections.Generic;
 
-namespace Landis.Extension.BiomassFuels
+namespace Landis.Extension.DynamicFuels
 {
     //Disturbance fuel types
     public interface IDisturbanceType

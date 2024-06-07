@@ -5,7 +5,7 @@ using Landis.SpatialModeling;
 
 using System.Collections.Generic;
 
-namespace Landis.Extension.BiomassFuels
+namespace Landis.Extension.DynamicFuels
 {
 
     ///<summary>
@@ -13,51 +13,35 @@ namespace Landis.Extension.BiomassFuels
     /// </summary>
     public static class SiteVars
     {
-        private static ISiteVar<int> fuelType;
-        private static ISiteVar<int> decidFuelType;
-        private static ISiteVar<int> percentConifer;
-        private static ISiteVar<int> percentHardwood;
-        private static ISiteVar<int> percentDeadFir;
-        private static ISiteVar<string> harvestPrescriptionName;
-        private static ISiteVar<int> timeOfLastHarvest;
-        private static ISiteVar<int> harvestCohortsKilled;
-        private static ISiteVar<int> timeOfLastFire;
-        private static ISiteVar<byte> fireSeverity;
-        private static ISiteVar<int> timeOfLastWind;
-        private static ISiteVar<byte> windSeverity;
-        private static ISiteVar<Dictionary<int,int>> numberDeadFirCohorts;
-
-        //private static ISiteVar<Landis.Library.BiomassCohorts.ISiteCohorts> cohorts;
-        private static ISiteVar<ISiteCohorts> cohorts;
 
         //---------------------------------------------------------------------
 
         public static void Initialize()
         {
-            cohorts = PlugIn.ModelCore.GetSiteVar<ISiteCohorts>("Succession.UniversalCohorts");
-            if (cohorts == null)
+            Cohorts = PlugIn.ModelCore.GetSiteVar<ISiteCohorts>("Succession.UniversalCohorts");
+            if (Cohorts == null)
             {
                 string mesg = string.Format("Cohorts are empty.  Please double-check that this extension is compatible with your chosen succession extension.");
                 throw new System.ApplicationException(mesg);
             }
 
-            fuelType     = PlugIn.ModelCore.Landscape.NewSiteVar<int>();
-            decidFuelType   = PlugIn.ModelCore.Landscape.NewSiteVar<int>();
-            percentConifer  = PlugIn.ModelCore.Landscape.NewSiteVar<int>();
-            percentHardwood = PlugIn.ModelCore.Landscape.NewSiteVar<int>();
-            percentDeadFir  = PlugIn.ModelCore.Landscape.NewSiteVar<int>();
+            FuelType     = PlugIn.ModelCore.Landscape.NewSiteVar<int>();
+            DecidFuelType   = PlugIn.ModelCore.Landscape.NewSiteVar<int>();
+            PercentConifer  = PlugIn.ModelCore.Landscape.NewSiteVar<int>();
+            PercentHardwood = PlugIn.ModelCore.Landscape.NewSiteVar<int>();
+            PercentDeadFir  = PlugIn.ModelCore.Landscape.NewSiteVar<int>();
 
-            timeOfLastHarvest       = PlugIn.ModelCore.GetSiteVar<int>("Harvest.TimeOfLastEvent");
-            harvestPrescriptionName = PlugIn.ModelCore.GetSiteVar<string>("Harvest.PrescriptionName");
-            harvestCohortsKilled    = PlugIn.ModelCore.GetSiteVar<int>("Harvest.CohortsDamaged");
+            TimeOfLastHarvest       = PlugIn.ModelCore.GetSiteVar<int>("Harvest.TimeOfLastEvent");
+            HarvestPrescriptionName = PlugIn.ModelCore.GetSiteVar<string>("Harvest.PrescriptionName");
+            HarvestCohortsKilled    = PlugIn.ModelCore.GetSiteVar<int>("Harvest.CohortsDamaged");
 
-            timeOfLastFire          = PlugIn.ModelCore.GetSiteVar<int>("Fire.TimeOfLastEvent");
-            fireSeverity            = PlugIn.ModelCore.GetSiteVar<byte>("Fire.Severity");
+            TimeOfLastFire          = PlugIn.ModelCore.GetSiteVar<int>("Fire.TimeOfLastEvent");
+            FireSeverity            = PlugIn.ModelCore.GetSiteVar<byte>("Fire.Severity");
 
-            timeOfLastWind          = PlugIn.ModelCore.GetSiteVar<int>("Wind.TimeOfLastEvent");
-            windSeverity            = PlugIn.ModelCore.GetSiteVar<byte>("Wind.Severity");
+            TimeOfLastWind          = PlugIn.ModelCore.GetSiteVar<int>("Wind.TimeOfLastEvent");
+            WindSeverity            = PlugIn.ModelCore.GetSiteVar<byte>("Wind.Severity");
 
-            numberDeadFirCohorts    = PlugIn.ModelCore.GetSiteVar<Dictionary<int,int>>("BDA.NumCFSConifers");
+            NumberDeadFirCohorts    = PlugIn.ModelCore.GetSiteVar<Dictionary<int,int>>("BDA.NumCFSConifers");
 
             PlugIn.ModelCore.RegisterSiteVar(SiteVars.FuelType, "Fuels.CFSFuelType");
             PlugIn.ModelCore.RegisterSiteVar(SiteVars.DecidFuelType, "Fuels.DecidFuelType");
@@ -68,127 +52,47 @@ namespace Landis.Extension.BiomassFuels
         }
         //---------------------------------------------------------------------
 
-        public static ISiteVar<int> FuelType
-        {
-            get {
-                return fuelType;
-            }
-            set {
-                fuelType = value;
-            }
-        }
+        public static ISiteVar<int> FuelType { get; set; }
         //---------------------------------------------------------------------
 
-        public static ISiteVar<int> DecidFuelType
-        {
-            get {
-                return decidFuelType;
-            }
-            set {
-                decidFuelType = value;
-            }
-        }
+        public static ISiteVar<int> DecidFuelType { get; set; }
         //---------------------------------------------------------------------
 
-        public static ISiteVar<int> PercentConifer
-        {
-            get {
-                return percentConifer;
-            }
-        }
+        public static ISiteVar<int> PercentConifer { get; private set; }
 
         //---------------------------------------------------------------------
 
-        public static ISiteVar<int> PercentHardwood
-        {
-            get {
-                return percentHardwood;
-            }
-        }
+        public static ISiteVar<int> PercentHardwood { get; private set; }
         //---------------------------------------------------------------------
 
-        public static ISiteVar<int> PercentDeadFir
-        {
-            get {
-                return percentDeadFir;
-            }
-        }
+        public static ISiteVar<int> PercentDeadFir { get; private set; }
         //---------------------------------------------------------------------
 
-        public static ISiteVar<string> HarvestPrescriptionName
-        {
-            get {
-                return harvestPrescriptionName;
-            }
-        }
+        public static ISiteVar<string> HarvestPrescriptionName { get; private set; }
         //---------------------------------------------------------------------
 
-        public static ISiteVar<int> TimeOfLastHarvest
-        {
-            get {
-                return timeOfLastHarvest;
-            }
-        }
+        public static ISiteVar<int> TimeOfLastHarvest { get; private set; }
         //---------------------------------------------------------------------
 
-        public static ISiteVar<int> HarvestCohortsKilled
-        {
-            get {
-                return harvestCohortsKilled;
-            }
-        }
+        public static ISiteVar<int> HarvestCohortsKilled { get; private set; }
         //---------------------------------------------------------------------
-        public static ISiteVar<int> TimeOfLastFire
-        {
-            get
-            {
-                return timeOfLastFire;
-            }
-        }
+        public static ISiteVar<int> TimeOfLastFire { get; private set; }
         //---------------------------------------------------------------------
 
-        public static ISiteVar<byte> FireSeverity
-        {
-            get
-            {
-                return fireSeverity;
-            }
-        }
+        public static ISiteVar<byte> FireSeverity { get; private set; }
         //---------------------------------------------------------------------
-        public static ISiteVar<int> TimeOfLastWind
-        {
-            get
-            {
-                return timeOfLastWind;
-            }
-        }
+        public static ISiteVar<int> TimeOfLastWind { get; private set; }
         //---------------------------------------------------------------------
 
-        public static ISiteVar<byte> WindSeverity
-        {
-            get
-            {
-                return windSeverity;
-            }
-        }
+        public static ISiteVar<byte> WindSeverity { get; private set; }
         //---------------------------------------------------------------------
 
-        public static ISiteVar<Dictionary<int,int>> NumberDeadFirCohorts
-        {
-            get {
-                return numberDeadFirCohorts;
-            }
-        }
+        public static ISiteVar<Dictionary<int, int>> NumberDeadFirCohorts { get; private set; }
 
         //---------------------------------------------------------------------
 
         public static ISiteVar<ISiteCohorts> Cohorts
         //public static ISiteVar<Landis.Library.BiomassCohorts.ISiteCohorts> Cohorts
-        {
-            get
-            {
-                return cohorts;
-            }
-        }
+        { get; private set; }
     }
 }

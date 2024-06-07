@@ -3,7 +3,7 @@
 using System.Collections.Generic;
 
 
-namespace Landis.Extension.BiomassFuels
+namespace Landis.Extension.DynamicFuels
 {
     /// <summary>
     /// The parameters for the plug-in.

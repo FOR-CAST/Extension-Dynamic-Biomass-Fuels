@@ -5,7 +5,7 @@ using Landis.Core;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Landis.Extension.BiomassFuels
+namespace Landis.Extension.DynamicFuels
 {
     /// <summary>
     /// A parser that reads the plug-in's parameters from text input.
