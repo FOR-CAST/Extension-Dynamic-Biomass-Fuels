@@ -4,9 +4,9 @@
     <RootNamespace>Landis.Extension.DynamicFuels</RootNamespace>
     <AssemblyName>Landis.Extension.DynamicFuels-v4</AssemblyName>
     <AssemblyTitle>Landis.Extension.DynamicFuels-v4</AssemblyTitle>
-		<AssemblyProduct>Landis.Extension.DynamicFuels-v4</AssemblyProduct>
-		<AssemblyCompany>Landis-II-Foundation</AssemblyCompany>
-		<AssemblyCopyright>Landis-II-Foundation</AssemblyCopyright>
+    <AssemblyProduct>Landis.Extension.DynamicFuels-v4</AssemblyProduct>
+    <AssemblyCompany>Landis-II-Foundation</AssemblyCompany>
+    <AssemblyCopyright>Landis-II-Foundation</AssemblyCopyright>
     <AssemblyVersion>4.0</AssemblyVersion>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
@@ -22,7 +22,7 @@
     <PackageTags>LANDIS-II;Landis;Extension;fire; fuels</PackageTags>
     <Description>Dynamic Fuels Extension</Description>
     <PackageReleaseNotes>.NET Standard 2.0 update</PackageReleaseNotes>
-    <FileVersion>3.1</FileVersion>
+    <FileVersion>4.0.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>

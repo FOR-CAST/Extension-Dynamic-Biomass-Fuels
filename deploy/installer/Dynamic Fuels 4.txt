@@ -5,5 +5,5 @@ Version      "4.0"
 Type         disturbance:fuels
 Assembly     Landis.Extension.DynamicFuels-v4
 Class        Landis.Extension.DynamicFuels.PlugIn
-Description  "Dynamic Fuel assignment extension using Biomass"
+Description  "Dynamic Fuel assignment extension"
 CoreVersion  8.0

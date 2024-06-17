@@ -2,7 +2,7 @@ LandisData  Species
 
 >>                      Sexual  Seed Disperal Dist  Vegetative   Sprout Age  Post-Fire
 >> Name      Longevity  Maturity  Effective  Maximum  Reprod Prob  Min   Max   Regen
->> ----      ---------  -------- ---------  -------  -----------  ----------  --------
+>> ----      ---------  --------  ---------  -------  -----------  ----------  --------
 abiebals	200	25	60	160	0.0	0	0	none
 acerrubr	150	4	100	200	0.5	0	100	resprout
 acersacc	400	22	50	330	0.3	0	100	none

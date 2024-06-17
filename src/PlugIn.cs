@@ -454,8 +454,6 @@ namespace Landis.Extension.DynamicFuels
             int numSiteCohorts = 0;
             int percentDeadFir = 0;
 
-            //ISpeciesDataset SpeciesDataset = modelCore.Species;
-
             foreach (ISpecies species in modelCore.Species)
             {
 
@@ -467,36 +465,12 @@ namespace Landis.Extension.DynamicFuels
             }
 
 
-                //foreach (ISpeciesCohorts speciesCohorts in (Landis.Library.BiomassCohorts.ISpeciesCohorts) SiteVars.Cohorts[site])
-                //foreach (ICohort cohort in speciesCohorts)
-                //    numSiteCohorts++;
-
-
             percentDeadFir = (int) ( ((double) numDeadFir / (double) (numSiteCohorts + numDeadFir)) * 100.0 + 0.5);
 
 
             return System.Math.Min(percentDeadFir, 100);
         }
 
-        /*public static int ComputeBiomass(ISpeciesCohorts cohorts)
-        {
-            int total = 0;
-            if (cohorts != null)
-                foreach (ICohort cohort in cohorts)
-                    total += cohort.Biomass;
-            return total;
-        }
-
-        //---------------------------------------------------------------------
-
-        public static int ComputeBiomass(ISiteCohorts cohorts)
-        {
-            int total = 0;
-            if (cohorts != null)
-                foreach (ISpeciesCohorts speciesCohorts in cohorts)
-                    total += ComputeBiomass(speciesCohorts);
-            return total;
-        }*/
 
         // Not Implemented; Use to add unique parameters to cohort.data
         public override void AddCohortData()

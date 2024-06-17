@@ -1,4 +1,6 @@
-LandisData  "Dynamic Biomass Fuels"
+LandisData  "Dynamic Fuel System"
+
+>> Note:  All inputs are provided as examples only.  They are not intended to serve as default values.
 
 Timestep  10
 
@@ -40,26 +42,16 @@ FuelTypes
       6 	ConiferPlantation	0 to 100	piceglau -abiebals -pinubank -pinustro
       8 	Deciduous 		0 to 300	acerrubr acersacc betualle fraxamer poputrem betupapy querelli querrubr tiliamer
 
-
->>EcoregionsTable (optional)
-
-
-
->> Fuel Type  Ecoregions
->> ---------  ---------------------------
->>    1	      upland lowland
->>    2       upland
->>    3       upland
->>    4       upland
-
 DisturbanceConversionTable
 >> Fuel Type	Duration       Disturbance Description
 >> ---------	---------	--------
 	14	20		WindSeverity3 AspenClearcut
 	13	20		WindSeverity4 MaxAgeClearcut
 	15	20		WindSeverity5 
+>>	6	40		ClearcutSprucePlant	<< If a harvest prescription includes planting, 
+							<< this entry could be an alternative method for assigning fuel type 6
 
-MapFileNames		fire/FuelType-{timestep}.gis 
-PctConiferFileName	fire/PctConifer-{timestep}.gis
-PctDeadFirFileName	fire/PctDeadFir-{timestep}.gis
+MapFileNames		fire/FuelType-{timestep}.tif
+PctConiferFileName	fire/PctConifer-{timestep}.tif
+PctDeadFirFileName	fire/PctDeadFir-{timestep}.tif
 

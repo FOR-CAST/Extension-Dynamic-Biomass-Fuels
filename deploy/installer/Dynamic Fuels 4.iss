@@ -1,7 +1,7 @@
 ; LANDIS-II Extension infomation
 #define CoreRelease "LANDIS-II-V8"
-#define ExtensionName "Dynamic Biomass Fuels"
-#define AppVersion "3.1.0"
+#define ExtensionName "Dynamic Fuel System"
+#define AppVersion "4.0"
 #define AppPublisher "LANDIS-II Foundation"
 #define AppURL "http://www.landis-ii.org/"
 
