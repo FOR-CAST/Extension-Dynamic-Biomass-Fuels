@@ -18,7 +18,7 @@ You need:
 
 # Download
 
-- The latest version can be [downloaded here](https://github.com/LANDIS-II-Foundation/Extension-Dynamic-Biomass-Fuels/blob/master/deploy/installer/LANDIS-II-V7%20Dynamic%20Fuels%20System%204.0-setup.exe). (Look for the download icon in the upper right corner.) Launch the installer.
+- The latest version can be [downloaded here](https://github.com/LANDIS-II-Foundation/Extension-Dynamic-Biomass-Fuels/blob/master/deploy/installer/LANDIS-II-V7%20Dynamic%20Fuel%20System%204.0-setup.exe). (Look for the download icon in the upper right corner.) Launch the installer.
 
 # Example Files
 
