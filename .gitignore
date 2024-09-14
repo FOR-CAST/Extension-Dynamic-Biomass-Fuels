@@ -232,3 +232,14 @@ testings/Core8-DynamicFuels4.0/biomass-succession/biomass-anpp-30.tif
 testings/Core8-DynamicFuels4.0/biomass-succession/biomass-anpp-40.tif
 testings/Core8-DynamicFuels4.0/biomass-succession/biomass-anpp-50.tif
 testings/Core8-DynamicFuels4.0/Biomass-succession-log.csv
+src/.vs/dynamic-fuels/FileContentIndex/57fae191-61d4-4333-8476-4d206b9fc873.vsidx
+testings/Core8-DynamicFuels4.0/Climate-future-annual-log.csv
+testings/Core8-DynamicFuels4.0/Climate-spinup-annual-log.csv
+testings/Core8-DynamicFuels4.0/DFFS-output/TimeOfLastFire-10.tif
+testings/Core8-DynamicFuels4.0/DFFS-output/TimeOfLastFire-20.tif
+testings/Core8-DynamicFuels4.0/DFFS-output/TimeOfLastFire-30.tif
+testings/Core8-DynamicFuels4.0/DFFS-output/TimeOfLastFire-40.tif
+testings/Core8-DynamicFuels4.0/DFFS-output/TimeOfLastFire-50.tif
+testings/Core8-DynamicFuels4.0/fire/dynamic-fire-event-log.csv
+testings/Core8-DynamicFuels4.0/Metadata/Climate-Library/Future-Annual-Log_Metadata.xml
+testings/Core8-DynamicFuels4.0/Metadata/Climate-Library/Spinup-Annual-Log_Metadata.xml
