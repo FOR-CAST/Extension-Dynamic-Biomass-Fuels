@@ -243,3 +243,7 @@ testings/Core8-DynamicFuels4.0/DFFS-output/TimeOfLastFire-50.tif
 testings/Core8-DynamicFuels4.0/fire/dynamic-fire-event-log.csv
 testings/Core8-DynamicFuels4.0/Metadata/Climate-Library/Future-Annual-Log_Metadata.xml
 testings/Core8-DynamicFuels4.0/Metadata/Climate-Library/Spinup-Annual-Log_Metadata.xml
+src/.vs/dynamic-fuels/v17/DocumentLayout.json
+src/.vs/ProjectEvaluation/dynamic-fuels.metadata.v9.bin
+src/.vs/ProjectEvaluation/dynamic-fuels.projects.v9.bin
+src/.vs/ProjectEvaluation/dynamic-fuels.strings.v9.bin
