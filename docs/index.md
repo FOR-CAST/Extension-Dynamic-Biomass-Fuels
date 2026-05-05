@@ -1,12 +1,12 @@
-# What is the Dynamic Biomass Fuels Extension?
+# What is the Dynamic Fuels Extension?
 
 The Dynamic Fire System extension must be used in conjunction with this fuel extension. The Dynamic Biomass Fuel extension uses cohort species, age-ranges, and the aboveground live biomass of those cohorts to determine a fuel type for each cell on the landscape. The fuel types should match the fuel types created in the Dynamic Fire System extension. Prescriptions from the Harvest extension and mortality from the BDA extension, a wind extension or a fire extension can optionally cause fuel types to change.
 
 # Release Notes
 
-- Latest release: Version 4.0, September 2024
+- Latest release: Version 4.1, April 2026
 - Full release details found in the User Guide and on GitHub.
-- [View User Guide](https://github.com/LANDIS-II-Foundation/Extension-Dynamic-Biomass-Fuels/blob/master/docs/LANDIS-II%20Dynamic%20Fuel%20System%20v4.0%20User%20Guide.pdf).
+- [View User Guide](https://github.com/LANDIS-II-Foundation/Extension-Dynamic-Biomass-Fuels/blob/master/docs/LANDIS-II%20Dynamic%20Fuel%20System%20v4%20User%20Guide.pdf).
 - Copyright: The LANDIS-II Foundation
 
 # Requirements
@@ -24,7 +24,7 @@ You need:
 
 LANDIS-II requires a global parameter file for your scenario, and separate parameter files for each extension.
 
-Example files can be [downloaded from GitHub](https://downgit.github.io/#/home?url=https://github.com/LANDIS-II-Foundation/Extension-Dynamic-Biomass-Fuels/tree/master/testings/Core8-DynamicFuels4.0).
+Example files can be [downloaded from GitHub](https://downgit.github.io/#/home?url=https://github.com/LANDIS-II-Foundation/Extension-Dynamic-Biomass-Fuels/tree/master/testings/Core8-DynamicFuels4.1).
 
 # Citation
 

@@ -7,8 +7,10 @@
     <AssemblyProduct>Landis.Extension.DynamicFuels-v4</AssemblyProduct>
     <AssemblyCompany>Landis-II-Foundation</AssemblyCompany>
     <AssemblyCopyright>Landis-II-Foundation</AssemblyCopyright>
-    <AssemblyVersion>4.0</AssemblyVersion>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyVersion>4.1</AssemblyVersion>
+	  <Version>4.1</Version>
+	  <FileVersion>4.1.0</FileVersion>
+	  <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <RepositoryUrl>https://github.com/LANDIS-II-Foundation/Extension-Dynamic-Biomass-Fuels</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
@@ -18,11 +20,9 @@
     <Authors>Landis-II-Foundation</Authors>
     <Product>Landis.Extension.DynamicFuels-v4</Product>
     <Copyright>Landis-II-Foundation</Copyright>
-    <Version>4.0</Version>
     <PackageTags>LANDIS-II;Landis;Extension;fire; fuels</PackageTags>
     <Description>Dynamic Fuels Extension</Description>
-    <PackageReleaseNotes>.NET Standard 2.0 update</PackageReleaseNotes>
-    <FileVersion>4.0.0</FileVersion>
+    <PackageReleaseNotes>UCL update</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
@@ -33,8 +33,7 @@
     <Reference Include="Landis.Library.Metadata-v2">
       <HintPath>lib\Landis.Library.Metadata-v2.dll</HintPath>
     </Reference>
-    <Reference Include="Landis.Library.UniversalCohorts-v1">
-      <HintPath>lib\Landis.Library.UniversalCohorts-v1.dll</HintPath>
+    <Reference Include="Landis.Library.UniversalCohorts-v2">
     </Reference>
   </ItemGroup>
   
